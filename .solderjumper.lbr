@@ -298,7 +298,7 @@
 <symbol name="SOLDERJUMPER.2">
 <pin name="1" x="-2.54" y="0" visible="off" length="point"/>
 <pin name="2" x="2.54" y="0" visible="off" length="point" rot="R180"/>
-<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.2032" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
 <text x="-1.27" y="1.27" size="1.016" layer="95">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="1.016" layer="96">&gt;VALUE</text>
 <polygon width="0.12" layer="94">
@@ -311,7 +311,7 @@
 <vertex x="0.254" y="0.635" curve="-90"/>
 <vertex x="0.889" y="0" curve="-90"/>
 </polygon>
-<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="SOLDERJUMPER.3">
 <pin name="1" x="0" y="2.54" visible="off" length="point"/>
@@ -319,25 +319,25 @@
 <text x="0" y="3.175" size="1.016" layer="95">&gt;NAME</text>
 <text x="0" y="-3.81" size="1.016" layer="96">&gt;VALUE</text>
 <polygon width="0.12" layer="94">
-<vertex x="-0.889" y="-0.762"/>
-<vertex x="0.889" y="-0.762" curve="-90"/>
-<vertex x="0" y="-1.651" curve="-90"/>
+<vertex x="-0.635" y="-0.762"/>
+<vertex x="0.635" y="-0.762" curve="-90"/>
+<vertex x="0" y="-1.397" curve="-90"/>
 </polygon>
 <polygon width="0.12" layer="94">
-<vertex x="0.889" y="0.762"/>
-<vertex x="-0.889" y="0.762" curve="-90"/>
-<vertex x="0" y="1.651" curve="-90"/>
+<vertex x="0.635" y="0.762"/>
+<vertex x="-0.635" y="0.762" curve="-90"/>
+<vertex x="0" y="1.397" curve="-90"/>
 </polygon>
 <pin name="3" x="0" y="-2.54" visible="off" length="point"/>
 <polygon width="0.12" layer="94">
-<vertex x="-0.889" y="-0.381"/>
-<vertex x="-0.889" y="0.381"/>
-<vertex x="0.889" y="0.381"/>
-<vertex x="0.889" y="-0.381"/>
+<vertex x="-0.635" y="-0.381"/>
+<vertex x="-0.635" y="0.381"/>
+<vertex x="0.635" y="0.381"/>
+<vertex x="0.635" y="-0.381"/>
 </polygon>
-<wire x1="0" y1="2.54" x2="0" y2="1.651" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.651" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="0.889" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.397" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.397" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -382,7 +382,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name=".MED.PASTE" package="2.MED">
+<device name=".SML.PASTE" package="2.SML.PASTE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -391,7 +391,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name=".SML.PASTE" package="2.SML.PASTE">
+<device name=".MED.PASTE" package="2.MED.PASTE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
