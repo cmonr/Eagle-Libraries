@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -293,6 +293,20 @@
 <text x="-0.75" y="-1" size="0.4064" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.1" y1="-0.35" x2="0.6" y2="0.35" layer="31"/>
 </package>
+<package name="2.XL">
+<smd name="1" x="-0.735" y="0" dx="1.1684" dy="2.54" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="2" x="0.735" y="0" dx="1.1684" dy="2.54" layer="1" rot="R180" stop="no" cream="no"/>
+<wire x1="1.4732" y1="1.4224" x2="-1.4732" y2="1.4224" width="0.1016" layer="21"/>
+<wire x1="1.4732" y1="-1.4224" x2="-1.4732" y2="-1.4224" width="0.1016" layer="21"/>
+<wire x1="-1.4732" y1="1.4224" x2="-1.4732" y2="0.4826" width="0.1016" layer="21"/>
+<wire x1="1.4732" y1="1.4224" x2="1.4732" y2="0.4826" width="0.1016" layer="21"/>
+<wire x1="1.4732" y1="-1.4224" x2="1.4732" y2="-0.4826" width="0.1016" layer="21"/>
+<wire x1="-1.4732" y1="-1.4224" x2="-1.4732" y2="-0.4826" width="0.1016" layer="21"/>
+<text x="-1" y="1.635" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1" y="-2.008" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.35" y1="-1.3" x2="-0.15" y2="1.3" layer="29"/>
+<rectangle x1="0.15" y1="-1.3" x2="1.35" y2="1.3" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SOLDERJUMPER.2">
@@ -392,6 +406,15 @@
 </technologies>
 </device>
 <device name=".MED.PASTE" package="2.MED.PASTE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".XL" package="2.XL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
