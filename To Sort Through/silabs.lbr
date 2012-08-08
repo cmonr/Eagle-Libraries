@@ -805,9 +805,9 @@ Source: si750.pdf</description>
 <pin name="RFGND" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
 <pin name="TXO" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
 <pin name="!RST" x="-15.24" y="-10.16" visible="pin" length="short"/>
-<pin name="!SEN" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="!SEN" x="-15.24" y="-2.54" visible="pin" length="short"/>
 <pin name="SCLK" x="-15.24" y="-7.62" visible="pin" length="short"/>
-<pin name="SDIO" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="SDIO" x="-15.24" y="-5.08" visible="pin" length="short"/>
 <pin name="RCLK" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
 <pin name="LIN/DFS" x="-15.24" y="2.54" visible="pin" length="short"/>
 <pin name="VIO" x="-15.24" y="12.7" visible="pin" length="short"/>
