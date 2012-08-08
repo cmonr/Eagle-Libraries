@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="4" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -375,6 +375,17 @@
 <rectangle x1="-0.762" y1="-1.016" x2="-0.254" y2="1.016" layer="94"/>
 <rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="94"/>
 </symbol>
+<symbol name="INDUCTOR">
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0.635" y1="0" x2="1.905" y2="0" width="0.1524" layer="94" curve="-180"/>
+<text x="-1.905" y="1.27" size="1.016" layer="95">&gt;NAME</text>
+<text x="-1.905" y="-1.905" size="1.016" layer="96">&gt;VALUE</text>
+</symbol>
 <symbol name="LED">
 <pin name="1" x="-2.54" y="0" visible="off" length="point"/>
 <pin name="2" x="2.54" y="0" visible="off" length="point" rot="R180"/>
@@ -565,6 +576,40 @@
 </technologies>
 </device>
 <device name=".1210" package="1210">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RF-INDUCTOR" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name=".0402" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".0805" package="0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
