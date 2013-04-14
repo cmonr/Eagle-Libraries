@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="4" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -107,7 +93,7 @@
 </layers>
 <library>
 <packages>
-<package name="MICROFET-6">
+<package name="MICROFET.2X2">
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.1" layer="21"/>
 <wire x1="1" y1="1" x2="1" y2="-1" width="0.1" layer="21"/>
 <wire x1="1" y1="-1" x2="-1" y2="-1" width="0.1" layer="21"/>
@@ -118,92 +104,77 @@
 <rectangle x1="-0.8" y1="-1" x2="-0.5" y2="-0.725" layer="21"/>
 <rectangle x1="-0.15" y1="-1" x2="0.15" y2="-0.725" layer="21"/>
 <rectangle x1="0.5" y1="-1" x2="0.8" y2="-0.725" layer="21"/>
-<smd name="S1" x="-0.65" y="-0.915" dx="0.42" dy="0.42" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="1" x="-0.65" y="-0.915" dx="0.42" dy="0.42" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="-0.86" y1="0.705" x2="-0.44" y2="1.125" layer="29"/>
 <rectangle x1="-0.86" y1="0.705" x2="-0.44" y2="1.125" layer="31"/>
-<smd name="G1" x="0" y="-0.915" dx="0.42" dy="0.42" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="2" x="0" y="-0.915" dx="0.42" dy="0.42" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="-0.21" y1="0.705" x2="0.21" y2="1.125" layer="29"/>
 <rectangle x1="-0.21" y1="0.705" x2="0.21" y2="1.125" layer="31"/>
-<smd name="D2" x="0.65" y="-0.915" dx="0.42" dy="0.42" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="3" x="0.65" y="-0.915" dx="0.42" dy="0.42" layer="1" rot="R90" stop="no" cream="no"/>
 <rectangle x1="0.44" y1="0.705" x2="0.86" y2="1.125" layer="29"/>
 <rectangle x1="0.44" y1="0.705" x2="0.86" y2="1.125" layer="31"/>
-<smd name="S2" x="0.65" y="0.915" dx="0.42" dy="0.42" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="4" x="0.65" y="0.915" dx="0.42" dy="0.42" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="-0.86" y1="-1.125" x2="-0.44" y2="-0.705" layer="29"/>
 <rectangle x1="-0.86" y1="-1.125" x2="-0.44" y2="-0.705" layer="31"/>
-<smd name="G2" x="0" y="0.915" dx="0.42" dy="0.42" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="5" x="0" y="0.915" dx="0.42" dy="0.42" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="-0.21" y1="-1.125" x2="0.21" y2="-0.705" layer="29"/>
 <rectangle x1="-0.21" y1="-1.125" x2="0.21" y2="-0.705" layer="31"/>
-<smd name="D1" x="-0.65" y="0.915" dx="0.42" dy="0.42" layer="1" rot="R270" stop="no" cream="no"/>
+<smd name="6" x="-0.65" y="0.915" dx="0.42" dy="0.42" layer="1" rot="R270" stop="no" cream="no"/>
 <rectangle x1="0.44" y1="-1.125" x2="0.86" y2="-0.705" layer="29"/>
 <rectangle x1="0.44" y1="-1.125" x2="0.86" y2="-0.705" layer="31"/>
 <rectangle x1="-1" y1="-1" x2="0" y2="0" layer="51" rot="R90"/>
-<smd name="D1@PAD" x="-0.5" y="0" dx="0.645" dy="0.86" layer="1" stop="no" cream="no"/>
-<smd name="D2@PAD" x="0.5" y="0" dx="0.645" dy="0.86" layer="1" stop="no" cream="no"/>
-<rectangle x1="0.175" y1="-0.425" x2="0.825" y2="0.425" layer="29"/>
-<rectangle x1="-0.825" y1="-0.425" x2="-0.175" y2="0.425" layer="29"/>
-<rectangle x1="-0.65" y1="-0.25" x2="-0.35" y2="0.25" layer="31"/>
-<rectangle x1="0.35" y1="-0.25" x2="0.65" y2="0.25" layer="31"/>
-<text x="-1" y="1.25" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="-1" y="-2" size="0.8128" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+<smd name="PAD@1" x="-0.5" y="0" dx="1" dy="0.8" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="PAD@2" x="0.5" y="0" dx="1" dy="0.8" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
+<rectangle x1="0.3" y1="-0.3" x2="0.7" y2="0.3" layer="31"/>
+<rectangle x1="-0.7" y1="-0.3" x2="-0.3" y2="0.3" layer="31"/>
+<rectangle x1="-0.9" y1="-0.5" x2="-0.1" y2="0.5" layer="29"/>
+<rectangle x1="0.1" y1="-0.5" x2="0.9" y2="0.5" layer="29"/>
 </package>
 </packages>
 <symbols>
-<symbol name="N-MOSFET">
-<wire x1="-1.778" y1="0.762" x2="-1.778" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.778" y1="0" x2="-1.778" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-1.778" y1="3.175" x2="-1.778" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.778" y1="2.54" x2="-1.778" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-1.778" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="-1.905" x2="-1.778" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.778" y1="-2.54" x2="-1.778" y2="-3.175" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.778" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.508" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.032" y1="0.762" x2="1.778" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="0.508" x2="1.27" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.508" x2="0.762" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="0.508" x2="0.508" y2="0.254" width="0.1524" layer="94"/>
-<circle x="0" y="-2.54" radius="0.3592" width="0" layer="94"/>
-<circle x="0" y="2.54" radius="0.3592" width="0" layer="94"/>
-<text x="2.54" y="0.635" size="1.27" layer="95">&gt;NAME</text>
-<text x="2.54" y="-1.27" size="1.27" layer="96">&gt;VALUE</text>
-<text x="0.635" y="3.175" size="0.8128" layer="93">D</text>
-<text x="0.635" y="-3.81" size="0.8128" layer="93">S</text>
-<text x="-3.81" y="-1.905" size="0.8128" layer="93">G</text>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
-<pin name="S" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
-<pin name="D" x="0" y="5.08" visible="off" length="short" rot="R270"/>
+<symbol name="MOSFET.N">
+<text x="3.175" y="0.635" size="1.27" layer="95">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="1.27" y1="1.5875" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="-1.5875" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0.9525" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="0.3175" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-0.3175" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="-0.9525" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="1.27" x2="0.9525" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.9525" y1="0" x2="0.9525" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0.9525" y2="0" width="0.1524" layer="94"/>
+<pin name="G" x="0" y="0" visible="off" length="point"/>
+<pin name="S" x="2.54" y="-2.54" visible="off" length="point" rot="R180"/>
+<pin name="D" x="2.54" y="2.54" visible="off" length="point"/>
 <polygon width="0.1524" layer="94">
-<vertex x="1.27" y="0.508"/>
-<vertex x="0.762" y="-0.254"/>
-<vertex x="1.778" y="-0.254"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-1.524" y="0"/>
-<vertex x="-0.508" y="0.762"/>
-<vertex x="-0.508" y="-0.762"/>
+<vertex x="1.5875" y="0"/>
+<vertex x="1.905" y="0.3175"/>
+<vertex x="1.905" y="-0.3175"/>
 </polygon>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="FDMA1024NZ">
 <gates>
-<gate name="G$1" symbol="N-MOSFET" x="0" y="7.62"/>
-<gate name="G$2" symbol="N-MOSFET" x="0" y="-7.62"/>
+<gate name="G$1" symbol="MOSFET.N" x="-5.08" y="0"/>
+<gate name="G$2" symbol="MOSFET.N" x="-5.08" y="-7.62"/>
 </gates>
 <devices>
-<device name="" package="MICROFET-6">
+<device name="" package="MICROFET.2X2">
 <connects>
-<connect gate="G$1" pin="D" pad="D1 D1@PAD" route="any"/>
-<connect gate="G$1" pin="G" pad="G1"/>
-<connect gate="G$1" pin="S" pad="S1"/>
-<connect gate="G$2" pin="D" pad="D2 D2@PAD" route="any"/>
-<connect gate="G$2" pin="G" pad="G2"/>
-<connect gate="G$2" pin="S" pad="S2"/>
+<connect gate="G$1" pin="D" pad="6 PAD@1"/>
+<connect gate="G$1" pin="G" pad="2"/>
+<connect gate="G$1" pin="S" pad="1"/>
+<connect gate="G$2" pin="D" pad="3 PAD@2"/>
+<connect gate="G$2" pin="G" pad="5"/>
+<connect gate="G$2" pin="S" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
