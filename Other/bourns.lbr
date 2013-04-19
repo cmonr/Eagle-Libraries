@@ -250,7 +250,7 @@ Updated 01/08/2005&lt;/i&gt;&lt;/h4&gt;</description>
 <text x="-2.8575" y="-3.175" size="1.27" layer="21" ratio="10">3</text>
 </package>
 <package name="MF-5,1">
-<description>&lt;b&gt;Resetable Overcurent Protector&lt;/b&gt;&lt;br&gt; 
+<description>&lt;b&gt;Resetable Overcurent Protector&lt;/b&gt;&lt;br&gt;
 LS 5.1 mm x 10.9 mm wide, grid 0.0125"</description>
 <wire x1="-4.1275" y1="1.905" x2="-4.445" y2="1.5875" width="0.1778" layer="21"/>
 <wire x1="-4.445" y1="1.5875" x2="-4.445" y2="-1.5875" width="0.1778" layer="21"/>
@@ -1212,8 +1212,8 @@ LS 5.1 mm x 10.9 mm wide, grid 0.0125"</description>
 <wire x1="-1.905" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
 <wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.1524" layer="94" curve="-180"/>
 <wire x1="0.635" y1="0" x2="1.905" y2="0" width="0.1524" layer="94" curve="-180"/>
-<text x="-2.5" y="1.5" size="1.016" layer="95">&gt;NAME</text>
-<text x="-2.5" y="-1.5" size="1.016" layer="96">&gt;VALUE</text>
+<text x="-0.635" y="1.27" size="1.016" layer="95" rot="R90">&gt;NAME</text>
+<text x="0" y="1.27" size="1.016" layer="96" rot="MR90">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1291,7 +1291,7 @@ LS 5.1 mm x 10.9 mm wide, grid 0.0125"</description>
 </devices>
 </deviceset>
 <deviceset name="3386" prefix="R" uservalue="yes">
-<description>&lt;b&gt;3386 Series&lt;/b&gt;&lt;p&gt; 
+<description>&lt;b&gt;3386 Series&lt;/b&gt;&lt;p&gt;
 3/8" Square Trimmer (Multi-Package F,P,K &amp; Y)</description>
 <gates>
 <gate name="1" symbol="TPOT-3U" x="0" y="0"/>
@@ -1313,7 +1313,7 @@ LS 5.1 mm x 10.9 mm wide, grid 0.0125"</description>
 </devices>
 </deviceset>
 <deviceset name="3386-" prefix="R" uservalue="yes">
-<description>&lt;b&gt;3386 Series&lt;/b&gt;&lt;p&gt; 
+<description>&lt;b&gt;3386 Series&lt;/b&gt;&lt;p&gt;
 3/8" Square Trimmer</description>
 <gates>
 <gate name="G$1" symbol="TPOT" x="0" y="0"/>
@@ -1516,7 +1516,7 @@ LS 5.1 mm x 10.9 mm wide, grid 0.0125"</description>
 </devices>
 </deviceset>
 <deviceset name="3362" prefix="R" uservalue="yes">
-<description>&lt;b&gt;3362 Series&lt;/b&gt;&lt;p&gt;  
+<description>&lt;b&gt;3362 Series&lt;/b&gt;&lt;p&gt;
 1/4" Square Trimmer</description>
 <gates>
 <gate name="G$1" symbol="TPOT" x="0" y="-2.54"/>
