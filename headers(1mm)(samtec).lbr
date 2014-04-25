@@ -57,8 +57,6 @@
 <library>
 <packages>
 <package name="SEI-105-02-XX-S">
-<description>&lt;b&gt;PCB Libraries Packages&lt;/b&gt;&lt;p&gt;
-\</description>
 <smd name="1" x="-2" y="-0.88" dx="1.346" dy="0.559" layer="1" rot="R90"/>
 <smd name="2" x="-1" y="-0.88" dx="1.346" dy="0.559" layer="1" rot="R90"/>
 <smd name="3" x="0" y="-0.879" dx="1.346" dy="0.559" layer="1" rot="R90"/>
@@ -179,8 +177,8 @@
 <rectangle x1="0.85" y1="-1.25" x2="1.15" y2="2" layer="21"/>
 <rectangle x1="1.85" y1="-1.25" x2="2.15" y2="2" layer="21"/>
 <text x="3.928690625" y="0.07595" size="0.7" layer="25" ratio="5" rot="R90">&gt;VALUE</text>
-<hole x="-1.5" y="4.32" drill="0.9"/>
-<hole x="1.5" y="4.32" drill="0.9"/>
+<hole x="-1.5" y="4.32" drill="0.99"/>
+<hole x="1.5" y="4.32" drill="0.99"/>
 </package>
 <package name="SEI-110-02-XX-S-X-AB">
 <smd name="1" x="-4.5" y="-0.88" dx="1.346" dy="0.559" layer="1" rot="R90"/>
@@ -209,8 +207,8 @@
 <rectangle x1="0.35" y1="-1.25" x2="0.65" y2="2" layer="21"/>
 <rectangle x1="3.35" y1="-1.25" x2="3.65" y2="2" layer="21"/>
 <rectangle x1="4.35" y1="-1.25" x2="4.65" y2="2" layer="21"/>
-<hole x="-4" y="4.32" drill="0.9"/>
-<hole x="4" y="4.32" drill="0.9"/>
+<hole x="-4" y="4.32" drill="0.99"/>
+<hole x="4" y="4.32" drill="0.99"/>
 </package>
 <package name="SEI-110-02-XX-S-X-AT">
 <smd name="1" x="-4.5" y="-0.88" dx="1.346" dy="0.559" layer="1" rot="R90"/>
@@ -243,27 +241,65 @@
 <circle x="4" y="4.32" radius="0.44" width="0.1" layer="21"/>
 </package>
 <package name="SEI-105-02-XX-S.MATE">
-<smd name="1" x="-2" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="2" x="-1" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="3" x="0" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="4" x="1" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="5" x="2" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
+<smd name="1" x="-2" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="2" x="-1" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="3" x="0" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="4" x="1" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="5" x="2" y="1.2" dx="0.56" dy="2.477" layer="1"/>
 </package>
 <package name="SEI-105-02-XX-S-AB.MATE">
-<smd name="1" x="-2" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="2" x="-1" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="3" x="0" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="4" x="1" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="5" x="2" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
+<smd name="1" x="-2" y="1.2" dx="0.56" dy="2.477" layer="1" rot="R180"/>
+<smd name="2" x="-1" y="1.2" dx="0.56" dy="2.477" layer="1" rot="R180"/>
+<smd name="3" x="0" y="1.2" dx="0.56" dy="2.477" layer="1" rot="R180"/>
+<smd name="4" x="1" y="1.2" dx="0.56" dy="2.477" layer="1" rot="R180"/>
+<smd name="5" x="2" y="1.2" dx="0.56" dy="2.477" layer="1" rot="R180"/>
 </package>
 <package name="SEI-105-02-XX-S-AT.MATE">
-<smd name="1" x="-2" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="2" x="-1" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="3" x="0" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="4" x="1" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<smd name="5" x="2" y="-1.25" dx="0.56" dy="2.477" layer="1"/>
-<hole x="-1.5" y="1.84" drill="0.99"/>
-<hole x="1.5" y="1.84" drill="0.99"/>
+<smd name="1" x="-2" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="2" x="-1" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="3" x="0" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="4" x="1" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="5" x="2" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<hole x="-1.5" y="4.32" drill="0.99"/>
+<hole x="1.5" y="4.32" drill="0.99"/>
+</package>
+<package name="SEI-110-02-XX-S-X-AT.MATE">
+<smd name="1" x="-4.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="2" x="-3.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="3" x="-2.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="4" x="-1.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="5" x="-0.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="6" x="0.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="7" x="1.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="8" x="2.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="9" x="3.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="10" x="4.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<hole x="-4" y="4.32" drill="0.99"/>
+<hole x="4" y="4.32" drill="0.99"/>
+</package>
+<package name="SEI-110-02-XX-S-X-AB.MATE">
+<smd name="1" x="-4.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="2" x="-3.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="3" x="-2.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="4" x="-1.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="5" x="-0.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="6" x="0.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="7" x="1.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="8" x="2.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="9" x="3.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="10" x="4.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+</package>
+<package name="SEI-110-02-XX-S.MATE">
+<smd name="1" x="-4.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="2" x="-3.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="3" x="-2.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="4" x="-1.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="5" x="-0.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="6" x="0.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="7" x="1.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="8" x="2.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="9" x="3.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
+<smd name="10" x="4.5" y="1.2" dx="0.56" dy="2.477" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -751,6 +787,57 @@
 </technologies>
 </device>
 <device name=".SEI.AT" package="SEI-110-02-XX-S-X-AT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SEI.AB.MATE" package="SEI-110-02-XX-S-X-AB.MATE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SEI.AT.MATE" package="SEI-110-02-XX-S-X-AT.MATE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SEI.MATE" package="SEI-110-02-XX-S.MATE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -56,21 +56,22 @@
 </layers>
 <library>
 <packages>
-<package name="2MM">
-<hole x="0" y="0" drill="2"/>
+<package name="#2">
+<description>"http://www.rcexchange.com/how-to/Hole_sizes_for_screws.pdf"</description>
 <circle x="0" y="0" radius="1.56" width="1.12" layer="21"/>
+<hole x="0" y="0" drill="2.3622"/>
 </package>
 <package name="2MM.VIA">
 <circle x="0" y="0" radius="1.56" width="1.12" layer="21"/>
 <pad name="1" x="0" y="0" drill="1.8"/>
 </package>
-<package name="4MM">
-<hole x="0" y="0" drill="4"/>
-<circle x="0" y="0" radius="2.39" width="0.78" layer="21"/>
+<package name="#4">
+<hole x="0" y="0" drill="3.175"/>
+<circle x="0" y="0" radius="1.8796" width="0.889" layer="21"/>
 </package>
 <package name="4MM.VIA">
-<circle x="0" y="0" radius="2.39" width="0.78" layer="21"/>
-<pad name="1" x="0" y="0" drill="3.8"/>
+<pad name="1" x="0" y="0" drill="2.8448"/>
+<circle x="0" y="0" radius="1.905" width="0.889" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -89,12 +90,12 @@
 <gate name="G$1" symbol="HOLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name=".2MM" package="2MM">
+<device name=".2MM" package="#2">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name=".4MM" package="4MM">
+<device name=".4MM" package="#4">
 <technologies>
 <technology name=""/>
 </technologies>
