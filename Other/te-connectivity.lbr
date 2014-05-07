@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="dots" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -126,6 +126,10 @@
 <wire x1="3.15" y1="5.48" x2="3.95" y2="4.68" width="0" layer="20" curve="-90"/>
 <wire x1="3.95" y1="4.68" x2="3.95" y2="0" width="0" layer="20"/>
 <wire x1="3.95" y1="0" x2="5.715" y2="0" width="0" layer="20"/>
+</package>
+<package name="4DB-P108-02">
+</package>
+<package name="4DB-P107-02">
 </package>
 </packages>
 <symbols>
