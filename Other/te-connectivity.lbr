@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="dots" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -14,7 +14,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -128,11 +128,45 @@
 <wire x1="3.95" y1="0" x2="5.715" y2="0" width="0" layer="20"/>
 </package>
 <package name="4DB-P108-02">
+<wire x1="13.462" y1="0.635" x2="13.462" y2="12.065" width="0.1" layer="21"/>
+<wire x1="13.462" y1="12.065" x2="12.827" y2="12.7" width="0.1" layer="21" curve="90"/>
+<wire x1="12.827" y1="12.7" x2="-12.827" y2="12.7" width="0.1" layer="21"/>
+<wire x1="-12.827" y1="12.7" x2="-13.462" y2="12.065" width="0.1" layer="21" curve="90"/>
+<wire x1="-13.462" y1="12.065" x2="-13.462" y2="0.635" width="0.1" layer="21"/>
+<wire x1="-13.462" y1="0.635" x2="-12.827" y2="0" width="0.1" layer="21" curve="90"/>
+<wire x1="-12.827" y1="0" x2="12.827" y2="0" width="0.1" layer="21"/>
+<wire x1="12.827" y1="0" x2="13.462" y2="0.635" width="0.1" layer="21" curve="90"/>
+<pad name="1" x="-8.255" y="2.3622" drill="2"/>
+<pad name="2" x="0" y="2.3622" drill="2"/>
+<pad name="3" x="8.255" y="2.3622" drill="2"/>
+<circle x="0" y="6.5" radius="3.201559375" width="0.1" layer="21"/>
+<circle x="8.255" y="6.5" radius="3.201559375" width="0.1" layer="21"/>
+<circle x="-8.255" y="6.5" radius="3.201559375" width="0.1" layer="21"/>
 </package>
 <package name="4DB-P107-02">
 </package>
 </packages>
 <symbols>
+<symbol name="1X3_HEADER">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.016" layer="94" font="vector" rot="MR0" align="center">01</text>
+<text x="-2.54" y="5.715" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-6.985" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+<pin name="1" x="2.54" y="2.54" visible="off" length="point" rot="R180"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="0" size="1.016" layer="94" font="vector" rot="MR0" align="center">02</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<text x="0" y="-2.54" size="1.016" layer="94" font="vector" rot="MR0" align="center">03</text>
+<pin name="3" x="2.54" y="-2.54" visible="off" length="point" rot="R180"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
 <symbol name="USB.5PIN">
 <pin name="VBUS" x="5.08" y="5.08" visible="pin" length="point" rot="R180"/>
 <pin name="D-" x="5.08" y="2.54" visible="pin" length="point" rot="R180"/>
@@ -194,6 +228,23 @@
 <connect gate="G$1" pin="GND" pad="5" route="any"/>
 <connect gate="G$1" pin="ID" pad="4"/>
 <connect gate="G$1" pin="VBUS" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X3" prefix="H">
+<gates>
+<gate name="G$1" symbol="1X3_HEADER" x="0" y="0"/>
+</gates>
+<devices>
+<device name=".4DB" package="4DB-P108-02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
