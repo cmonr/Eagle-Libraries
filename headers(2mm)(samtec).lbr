@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -451,6 +451,36 @@
 <pad name="18" x="16" y="2" drill="0.8" diameter="1.4224"/>
 <pad name="19" x="18" y="0" drill="0.8" diameter="1.4224"/>
 <pad name="20" x="18" y="2" drill="0.8" diameter="1.4224"/>
+</package>
+<package name="1X4_MMS.SV">
+<wire x1="-4.2774" y1="0.9995" x2="4.2774" y2="0.9995" width="0.127" layer="51"/>
+<wire x1="4.2774" y1="0.9995" x2="4.2774" y2="-0.9995" width="0.127" layer="51"/>
+<wire x1="4.2774" y1="-0.9995" x2="-4.2774" y2="-0.9995" width="0.127" layer="51"/>
+<wire x1="-4.2774" y1="-0.9995" x2="-4.2774" y2="0.9995" width="0.127" layer="51"/>
+<smd name="1" x="-2.9985" y="-1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="2" x="-0.9995" y="1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="3" x="0.9995" y="-1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="4" x="2.9985" y="1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<text x="-4.552" y="-1.274" size="0.762" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.064" y="-1.02" size="0.762" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="1X10_MMS.SV">
+<wire x1="-10.2774" y1="0.9995" x2="10.2774" y2="0.9995" width="0.127" layer="51"/>
+<wire x1="10.2774" y1="0.9995" x2="10.2774" y2="-0.9995" width="0.127" layer="51"/>
+<wire x1="10.2774" y1="-0.9995" x2="-10.2774" y2="-0.9995" width="0.127" layer="51"/>
+<wire x1="-10.2774" y1="-0.9995" x2="-10.2774" y2="0.9995" width="0.127" layer="51"/>
+<smd name="5" x="-0.9985" y="-1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="6" x="1.0005" y="1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="7" x="2.9995" y="-1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="8" x="4.9985" y="1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<text x="-10.552" y="-1.274" size="0.762" layer="25" rot="R90">&gt;NAME</text>
+<text x="11.064" y="-1.02" size="0.762" layer="27" rot="R90">&gt;VALUE</text>
+<smd name="1" x="-8.9985" y="-1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="2" x="-6.9995" y="1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="3" x="-5.0005" y="-1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="4" x="-3.0015" y="1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="9" x="7.0015" y="-1.6764" dx="1.016" dy="2.0828" layer="1"/>
+<smd name="10" x="9.0005" y="1.6764" dx="1.016" dy="2.0828" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -1580,12 +1610,29 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="1X10">
+<deviceset name="1X10" prefix="H">
 <gates>
 <gate name="G$1" symbol="1X10_HEADER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="1X10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".MMS.SV" package="1X10_MMS.SV">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
