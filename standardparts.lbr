@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="dots" multiple="2" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -211,8 +212,8 @@
 <vertex x="-0.5" y="0.25"/>
 <vertex x="-0.2" y="0.25"/>
 </polygon>
-<rectangle x1="-0.95" y1="-0.3" x2="-0.15" y2="0.3" layer="30"/>
-<rectangle x1="0.15" y1="-0.3" x2="0.95" y2="0.3" layer="30"/>
+<rectangle x1="-0.95" y1="-0.3" x2="-0.15" y2="0.3" layer="29"/>
+<rectangle x1="0.15" y1="-0.3" x2="0.95" y2="0.3" layer="29"/>
 <wire x1="-0.2" y1="0.4" x2="-1.05" y2="0.4" width="0.1" layer="21"/>
 <wire x1="-1.05" y1="0.4" x2="-1.05" y2="-0.4" width="0.1" layer="21"/>
 <wire x1="-1.05" y1="-0.4" x2="-0.2" y2="-0.4" width="0.1" layer="21"/>
